@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit List</title>
+</head>
+<body>
+<h1>Edit Data of Student/s</h1>
+<form action='/student/edit/{{student_list.key.id()}}' method='post'>
+    <input type='text' name='first_name' value='{{student_list.first_name}}' placeholder='first name'/>
+    <input type='text' name='last_name' value='{{student_list.last_name}}' placeholder='last name'/>
+    <input type='text' name='age' value='{{student_list.age}}' placeholder='age'/>
+    <input type='submit' value='Edit Student'></input>
+</form>
+</body>
+</html>
